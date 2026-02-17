@@ -1,0 +1,190 @@
+.broadcast-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.broadcast-header {
+  margin-bottom: 32px;
+}
+
+.broadcast-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.broadcast-header p {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.broadcast-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.broadcast-section {
+  background: var(--surface-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.broadcast-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 14px;
+  resize: vertical;
+  background: var(--surface-secondary);
+  color: var(--text-primary);
+}
+
+.recipients-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recipients-info p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin: 0;
+}
+
+.broadcast-actions {
+  margin-top: 24px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: var(--surface-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background: var(--surface-hover);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .broadcast-container {
+    padding: 16px;
+  }
+  
+  .broadcast-header {
+    margin-bottom: 24px;
+  }
+  
+  .broadcast-header h1 {
+    font-size: 24px;
+  }
+  
+  .broadcast-header p {
+    font-size: 14px;
+  }
+  
+  .broadcast-content {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .broadcast-section {
+    padding: 16px;
+  }
+  
+  .broadcast-section h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+  }
+  
+  .form-group textarea {
+    padding: 10px;
+    font-size: 13px;
+  }
+  
+  .broadcast-actions {
+    margin-top: 16px;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .broadcast-container {
+    padding: 12px;
+  }
+  
+  .broadcast-header h1 {
+    font-size: 20px;
+  }
+  
+  .broadcast-section {
+    padding: 12px;
+  }
+  
+  .broadcast-section h3 {
+    font-size: 16px;
+  }
+}

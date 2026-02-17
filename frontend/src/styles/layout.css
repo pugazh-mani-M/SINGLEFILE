@@ -1,0 +1,62 @@
+.crm-dashboard {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray-50);
+}
+
+.crm-main-content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.crm-sidebar-left {
+  width: 320px;
+  background-color: white;
+  border-right: 1px solid var(--gray-200);
+  display: flex;
+  flex-direction: column;
+}
+
+.crm-chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray-50);
+}
+
+.crm-sidebar-right {
+  width: 320px;
+  background-color: white;
+  border-left: 1px solid var(--gray-200);
+}
+
+.crm-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--gray-50);
+}
+
+.crm-loading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.crm-loading-spinner {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid var(--primary-600);
+  border-top: 2px solid transparent;
+  border-radius: var(--radius-full);
+  animation: spin 1s linear infinite;
+}
+
+.crm-loading-text {
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+}

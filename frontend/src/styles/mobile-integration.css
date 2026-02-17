@@ -1,0 +1,283 @@
+.mobile-integration-container {
+  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.integration-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.integration-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.integration-header p {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.step-content {
+  background: var(--surface-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.step-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.phone-numbers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.phone-number-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: var(--surface-secondary);
+}
+
+.phone-number-card:hover {
+  border-color: var(--primary-color);
+  background: var(--surface-hover);
+}
+
+.phone-number-card.selected {
+  border-color: var(--primary-color);
+  background: var(--primary-light, rgba(59, 130, 246, 0.1));
+}
+
+.phone-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.phone-number {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.phone-country {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.phone-status .status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.verification-info {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.verification-info p {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.selected-number {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-color);
+  padding: 16px;
+  background: var(--surface-secondary);
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.verification-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 2px;
+  background: var(--surface-secondary);
+  color: var(--text-primary);
+}
+
+.error-message {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 16px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.error-message.dev-code {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.integration-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 120px;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: var(--surface-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background: var(--surface-hover);
+}
+
+.success-message {
+  text-align: center;
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  background: #10b981;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 auto 24px;
+}
+
+.success-message h3 {
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.success-message p {
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+.integration-details {
+  background: var(--surface-secondary);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.detail-value {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.status-verified {
+  color: #10b981 !important;
+}
+
+@media (max-width: 768px) {
+  .mobile-integration-container {
+    padding: 16px;
+  }
+  
+  .step-content {
+    padding: 24px 16px;
+  }
+  
+  .phone-number-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .integration-actions {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+}

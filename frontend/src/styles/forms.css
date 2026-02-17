@@ -1,0 +1,104 @@
+.form-group {
+  margin-bottom: var(--spacing-4);
+}
+
+.form-label {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--gray-700);
+  margin-bottom: var(--spacing-2);
+}
+
+.form-input {
+  width: 100%;
+  padding: var(--spacing-2) var(--spacing-3);
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  color: var(--gray-900);
+  background-color: white;
+  transition: all 150ms;
+}
+
+.form-input::placeholder {
+  color: var(--gray-500);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 2px var(--primary-500);
+}
+
+.form-input:disabled {
+  background-color: var(--gray-100);
+  cursor: not-allowed;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 4rem;
+}
+
+.form-select {
+  width: 100%;
+  padding: var(--spacing-2) var(--spacing-3);
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  color: var(--gray-900);
+  background-color: white;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+  appearance: none;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 2px var(--primary-500);
+}
+
+.form-checkbox {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-sm);
+  background-color: white;
+  cursor: pointer;
+}
+
+.form-checkbox:checked {
+  background-color: var(--primary-600);
+  border-color: var(--primary-600);
+}
+
+.form-radio {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-full);
+  background-color: white;
+  cursor: pointer;
+}
+
+.form-radio:checked {
+  background-color: var(--primary-600);
+  border-color: var(--primary-600);
+}
+
+.form-error {
+  font-size: var(--text-xs);
+  color: var(--red-600);
+  margin-top: var(--spacing-1);
+}
+
+.form-help {
+  font-size: var(--text-xs);
+  color: var(--gray-500);
+  margin-top: var(--spacing-1);
+}

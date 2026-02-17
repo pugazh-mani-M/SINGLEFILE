@@ -1,0 +1,38 @@
+{
+  "name": "whatsapp-crm-backend",
+  "version": "1.0.0",
+  "description": "WhatsApp CRM Backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "create-dynamo-tables": "node src/scripts/createDynamoTables.js",
+    "test-dynamodb": "node test-dynamodb.js",
+    "test-webhook": "node test-webhook-persistence.js",
+    "test-flow": "node test-complete-flow.js",
+    "test-mongodb": "node test-mongodb-connection.js",
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.981.0",
+    "@aws-sdk/lib-dynamodb": "^3.981.0",
+    "axios": "^1.6.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.10.0",
+    "express-validator": "^7.3.1",
+    "helmet": "^7.0.0",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.0",
+    "node-cron": "^3.0.3",
+    "socket.io": "^4.7.2",
+    "uuid": "^9.0.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
